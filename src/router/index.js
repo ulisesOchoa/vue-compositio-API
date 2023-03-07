@@ -23,17 +23,27 @@ const routes = [
   {
     path: '/users',
     name: 'users',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/Users.vue')
+    component: () => import(/* webpackChunkName: "users" */ '../views/Users.vue')
   },
   {
     path: '/pokemon-search',
     name: 'pokemon-search',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/SearchPokemon.vue')
+    component: () => import(/* webpackChunkName: "pokemon-search" */ '../views/SearchPokemon.vue')
   },
   {
     path: '/pokemon/:id',
     name: 'pokemon-id',
-    component: () => import(/* webpackChunkName: "counter" */ '../views/Pokemon.vue')
+    component: () => import(/* webpackChunkName: "pokemon-id" */ '../views/Pokemon.vue')
+  },
+  {
+    path: '/todo',
+    name: 'todo',
+    component: () => import(/* webpackChunkName: "todo" */ '../views/TodoVuex.vue')
+  },
+  {
+    path: '/slots',
+    name: 'slots',
+    component: () => import(/* webpackChunkName: "todo" */ '../views/CustomSlots.vue')
   }
 ]
 
